@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="background" src="media/backgroundpng.png" alt="background">
+        <img class="logo" src="media/Logotipo-Lets-Coder-Blanco-simple@2x-e1586670853592.png" alt="logo">
+    </header>
+    <div class="gridmenu">
+        <div><br></div>
+        <div><br></div>
+        <div class="menu2">
+            <nav>
+                <ul>
+                    <li class="navbar">
+                        <div class="menu">
+                            <div><a href="home.html">Home</a></div>
+                            <div><a href="conocenos.html">Conócenos</a></div>
+                            <div><a href="contacto.html">Contacto</a></div>
+                            <div><a href="info.html">Alumnos</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--TRES CONTENEDORES AUXILIARES PARA LLENAR EL ESPACIO VACIO-->
+    <h1 class="titinsc">Inscripción</h1>
+    <div class="container">
+        <div class="forms personal2">
+            <h2>Información personal</h2>
+            <form class="fpersonal" action="">
+                <ul class="test">
+                    <li>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" required>
+
+                    </li>
+                    <li>
+                        <label for="1apellido">1er Apellido</label>
+                        <input type="text" id="1apellido" required>
+                    </li>
+
+                    <li>
+                        <label for="2apellido">2do Apellido</label>
+                        <input type="text" id="2apellido">
+                    </li>
+                    <li>
+                        <label for="poblacion">Población</label>
+                        <input type="text" id="poblacion" required>
+                    </li>
+                    <li>
+                        <label for="age">Edad</label>
+                        <input type="number" id="age" required>
+                    </li>
+                    <li>
+                        <label for="cp">Código postal</label>
+                        <input type="number" id="cp" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </li>
+                    <li>
+                        <label class="radio" for="hombre">Hombre</label>
+                        <input type="radio" name="genero" id="hombre">
+                        <label class="radio" for="mujer">Mujer</label>
+                        <input type="radio" name="genero" id="mujer">
+
+                    </li>
+
+                    <button type="submit">Inscribirme</button>
+
+                </ul>
+            </form>
+        </div>
+
+        <div class="forms">
+            <h2>Información del curso</h2>
+            <form class="curso" action="">
+                <label for="full">Full-Time</label>
+                <input type="radio" name="tipo" id="full">
+                <label for="part">Part-Time</label>
+                <input type="radio" name="tipo" id="part">
+                <select name="ciudades" id="ciudades">
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Salamanca">Salamanca</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                    <option value="Madrid">Madrid</option>
+                </select>
+                <div class="checks">
+                    <label for="fecha">Fecha de comienzo</label>
+                    <input type="date">
+                    <label for="frontend">Frontend</label>
+                    <input type="checkbox" name="checkbox" id="frontend">
+                    <label for="backend">Backend</label>
+                    <input type="checkbox" name="checkbox" id="backend">
+                    <label for="api">API</label>
+                    <input type="checkbox" name="checkbox" id="api">
+                    <label for="database">Bases de datos</label>
+                    <input type="checkbox" name="checkbox" id="database">
+                </div>
+            </form>
+        </div>
+        <div class="textarea">
+            <h2>Text area</h2>
+            <form class="com" action="">
+                <textarea name="text1" id="text1" cols="30" rows="10"></textarea>
+
+            </form>
+            <button>Submit</button>
+        </div>
+
+    </div>
+
+
+    <div class="footerwrapper">
+
+        <footer class="footer">
+            <h5>Designed by: Roger González Hermosa</h5>
+        </footer>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
