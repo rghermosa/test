@@ -106,17 +106,19 @@
     
     table {
         position: relative;
-        left: 180px;
+        left: 5%;
     }
     
     th {
         text-align: left;
         padding-bottom: 10px;
+        border: 1px solid black;
     }
     
     td {
         padding-right: 30px;
         padding-bottom: 10px;
+        border: 1px solid black;
     }
     
     .navbar {
