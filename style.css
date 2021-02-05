@@ -58,7 +58,7 @@
             .background {
                 height: 150px;
             }
-            .gridcontent {
+            .gridcontent.home {
                 grid-template-columns: 1.5fr, 0fr, 1.5fr;
             }
             .gridtabla {
@@ -76,6 +76,16 @@
                 margin-bottom: 200px;
                 text-align: center;
             }
+            .alumnoslista {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .titulo {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
         }
         
         @media (max-width: 800px) {
@@ -85,8 +95,8 @@
             .background {
                 height: 300px;
             }
-            .gridcontent {
-                grid-template-columns: 1.5fr, 0fr, 1, 5fr;
+            .gridcontent.home {
+                grid-template-columns: 1.5fr, 0fr, 1.5fr;
             }
             .gridtabla {
                 grid-column-start: 2;
@@ -117,6 +127,16 @@
             }
             .contactotexto {
                 width: 100%;
+            }
+            .alumnoslista {
+                grid-column-start: 1;
+                grid-column-end: -1;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            .titulo {
+                grid-column-start: 1;
+                grid-column-end: -1;
             }
         }
         
@@ -157,7 +177,7 @@
     }
     */
         
-        .gridcontent {
+        .gridcontent.home {
             display: grid;
             grid-template-columns: 45% 10% 45%;
             grid-template-rows: auto;
@@ -176,18 +196,24 @@
             margin-top: 60px;
             margin-bottom: 100px;
         }
-        /*
-    .gridcontent.alumnos {
-        grid-column: 2, 5;
-        grid-row: 2, 3;
-    }
-    */
+        
+        .gridcontent.alumnos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
         
         .alumnoslista {
-            grid-column-start: 3;
-            grid-column-end: 5;
+            grid-column-start: 2;
+            grid-column-end: -1;
             grid-row-start: 2;
             grid-row-end: 3;
+        }
+        
+        .titulo {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            margin-top: 50px;
         }
         
         .titinsc {
@@ -391,7 +417,7 @@
         .contacto {
             text-align: center;
             margin-bottom: 30px;
-            margin-top: 0px;
+            margin-top: 60px;
         }
         
         .pNegrita {
